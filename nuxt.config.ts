@@ -5,6 +5,14 @@ export default defineNuxtConfig({
   modules: ['@nuxt/ui', '@nuxt/image'],
   css: ['~/assets/main.css'],
 
+  app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/jpeg', href: '/images/logo.jpeg' }
+      ]
+    }
+  },
+
   ui: {
     colorMode: false,
   }

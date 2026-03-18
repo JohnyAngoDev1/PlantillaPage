@@ -52,10 +52,6 @@ const { footerLinks } = useNavigation()
                         <p class="text-gray-700 text-sm font-medium">{{ t('footer_hours_weekdays') }}</p>
                         <p class="text-gray-500 text-sm">{{ t('footer_hours_weekdays_time') }}</p>
                     </div>
-                    <div>
-                        <p class="text-gray-700 text-sm font-medium">{{ t('footer_hours_saturday') }}</p>
-                        <p class="text-gray-500 text-sm">{{ t('footer_hours_saturday_time') }}</p>
-                    </div>
                 </div>
             </section>
 
