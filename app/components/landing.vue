@@ -20,9 +20,9 @@ const wspUrl = computed(() => {
 
                     <div class="space-y-6">
                         <div class="space-y-2">
-                            <h2 class="text-4xl lg:text-6xl font-black text-black tracking-tighter leading-[0.9]">
+                            <h1 class="text-4xl lg:text-6xl font-black text-black tracking-tighter leading-[0.9]">
                                 {{ t('landing_hero_title_main') }}
-                            </h2>
+                            </h1>
                             <h2 class="text-4xl lg:text-6xl font-black text-primary tracking-tighter leading-[0.9]">
                                 {{ t('landing_hero_title_highlight') }}
                             </h2>
@@ -56,6 +56,7 @@ const wspUrl = computed(() => {
                 </div>
 
                 <NuxtImg :src="t('landing_hero_image_path')"
+                    alt="Profesional de MI CONTABLE PLUS+ revisando documentos financieros"
                     class="w-full aspect-square object-cover rounded-3xl shadow-2xl" />
             </div>
         </UContainer>

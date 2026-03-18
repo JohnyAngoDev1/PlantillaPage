@@ -19,7 +19,8 @@ const wspUrl = computed(() => {
     </span>
 
     <UButton icon="i-simple-icons-whatsapp" size="xl" variant="solid"
+      aria-label="Contactar por WhatsApp"
       class="rounded-2xl p-4 shadow-2xl shadow-green-500/40 hover:scale-110 active:scale-95 transition-all duration-300 bg-[#25D366] hover:bg-[#20ba5a]"
-      :to="wspUrl" target="_blank" />
+      :to="wspUrl" target="_blank" rel="noopener noreferrer" />
   </div>
 </template>

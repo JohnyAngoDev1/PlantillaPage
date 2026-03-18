@@ -34,7 +34,7 @@ const getServiceUrl = (titulo: string): string => {
           <template #header>
             <div class="">
               <div class="aspect-[1.2/1] w-full overflow-hidden rounded-4xl">
-                <img :src="item.image" class="w-full h-full object-cover" />
+                <img :src="item.image" :alt="item.title" class="w-full h-full object-cover" />
               </div>
             </div>
           </template>

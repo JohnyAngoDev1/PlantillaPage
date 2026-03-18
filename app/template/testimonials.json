@@ -1,4 +1,15 @@
 {
     "comments_section_subtitle": "Lo que dicen nuestros clientes",
-    "comments_section_title": "La satisfaction de nuestros clientes es nuestro mejor sello de calidad."
+    "comments_section_title": "La satisfacción de nuestros clientes es nuestro mejor sello de calidad.",
+    "testimonials": [
+        {
+            "user": {
+                "name": "Fernanda Illescas",
+                "description": "Cliente",
+                "avatar": { "src": "", "alt": "Fernanda Illescas" }
+            },
+            "quote": "La empresa ha demostrado un alto nivel de profesionalismo y compromiso. Su equipo contable brinda asesoría clara y precisa, lo que me ha permitido tomar mejores decisiones financieras. Además, la atención al cliente es excelente: siempre responden con rapidez y muestran disposición para resolver cualquier inquietud.",
+            "rate": 5
+        }
+    ]
 }
