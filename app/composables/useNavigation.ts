@@ -1,0 +1,32 @@
+import { computed } from 'vue'
+import { useTemplate } from '~/composables/useTemplate'
+
+export const useNavigation = () => {
+    const { t } = useTemplate()
+
+    const navItems = computed(() => [
+        { label: t('navbar_link_services'), to: '#servicios' },
+        { label: t('navbar_link_testimonials'), to: '#testimonios' },
+        { label: t('navbar_link_contact'), to: '#contacto' },
+    ])
+
+    const footerLinks = computed(() => ({
+        experience: [
+            { label: t('footer_link_portfolio'), to: '#' },
+            { label: t('footer_link_consulting'), to: '#' },
+            { label: t('footer_link_catalog'), to: '#' },
+            { label: t('footer_link_processes'), to: '#' }
+        ],
+        company: [
+            { label: t('footer_link_story'), to: '#' },
+            { label: t('footer_link_team'), to: '#' },
+            { label: t('footer_link_press'), to: '#' },
+            { label: t('footer_link_privacy'), to: '#' }
+        ]
+    }))
+
+    return {
+        navItems,
+        footerLinks
+    }
+}
