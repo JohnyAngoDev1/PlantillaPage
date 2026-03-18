@@ -1,10 +1,10 @@
 {
-    "landing_hero_image_path": "/images/landing/landing.jpg",
+    "landing_hero_image_path": "/images/services/people-standing-leaning-desk-working.jpg",
     "landing_hero_badge_text": "Artesanía en Madera para Toda la Vida",
-    "landing_hero_title_main": "Piezas Únicas con",
-    "landing_hero_title_highlight": "Diseño Contemporáneo",
-    "landing_hero_description": "Creamos piezas únicas que combinan técnicas tradicionales de ebanistería con diseño contemporáneo para hogares con alma.",
-    "landing_primary_button_text": "Ver Proyectos",
-    "landing_secondary_button_text": "Solicitar Presupuesto",
+    "landing_hero_title_main": "MI CONTABLE PLUS+",
+    "landing_hero_title_highlight": "Excelencia contable sin preocupaciones",
+    "landing_hero_description": "Olvídate del papeleo y las fechas límite. Declaramos tus impuestos y gestionamos tus finanzas con precisión profesional para que te enfoques en crecer",
+    "landing_primary_button_text": "Ver Servicios",
+    "landing_secondary_button_text": "Solicitar servicios",
     "landing_trust_badge_text": "La confianza de quienes ya disfrutan de nuestro trabajo"
 }

@@ -1,7 +1,14 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useTemplate } from '~/composables/useTemplate'
 
 const { t } = useTemplate()
+
+const wspUrl = computed(() => {
+  const phone = t('wspbutton_phone_number')
+  const message = encodeURIComponent('Hola, quiero saber más de sus servicios')
+  return `https://wa.me/${phone}?text=${message}`
+})
 </script>
 
 <template>
@@ -28,8 +35,10 @@ const { t } = useTemplate()
 
                     <div class="flex flex-col sm:flex-row items-center gap-4">
                         <UButton :label="t('landing_primary_button_text')"
+                            to="#servicios"
                             class="w-full sm:w-auto justify-center rounded-xl px-8 py-4 bg-primary text-white font-bold text-lg shadow-lg" />
                         <UButton :label="t('landing_secondary_button_text')" variant="outline"
+                            :to="wspUrl" target="_blank"
                             class="w-full sm:w-auto justify-center rounded-xl px-8 py-4 text-black font-bold text-lg" />
                     </div>
 

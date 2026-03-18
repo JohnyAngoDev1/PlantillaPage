@@ -1,8 +1,7 @@
 {
-    "navbar_brand_name": "Magdata",
+    "navbar_brand_name": "MI CONTABLE PLUS+",
     "navbar_brand_icon": "material-symbols:diamond-outline",
+    "navbar_link_home": "Inicio",
     "navbar_link_services": "Servicios",
-    "navbar_link_testimonials": "Testimonios",
-    "navbar_link_contact": "Contacto",
-    "navbar_cta_button_text": "Presupuesto"
+    "navbar_link_testimonials": "Testimonios"
 }

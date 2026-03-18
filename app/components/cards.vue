@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { useTemplate } from '~/composables/useTemplate'
-
 import { useServices } from '~/composables/useServices'
 
 const { t } = useTemplate()
 const { servicesList } = useServices()
 
-const onclick = (nombre: string): void => {
-  console.log('ha presionado en: ' + nombre)
+const getServiceUrl = (titulo: string): string => {
+  const phone = t('wspbutton_phone_number')
+  const message = encodeURIComponent(`Hola, quiero saber más sobre el servicio: ${titulo}`)
+  return `https://wa.me/${phone}?text=${message}`
 }
 </script>
 
@@ -28,8 +29,8 @@ const onclick = (nombre: string): void => {
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
-        <UPageCard v-for="item in servicesList" :key="item.title" class="rounded-4xl bg-secondary">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+        <UPageCard v-for="item in servicesList" :key="item.id" class="rounded-4xl bg-secondary">
           <template #header>
             <div class="">
               <div class="aspect-[1.2/1] w-full overflow-hidden rounded-4xl">
@@ -47,12 +48,10 @@ const onclick = (nombre: string): void => {
             </p>
           </div>
 
-          <div class=" flex items-center justify-between border-t border-primary/10 pt-3">
-            <span class="text-primary font-black text-xl tracking-tight">
-              {{ t('cards_item_price_prefix') }} {{ item.price }}
-            </span>
-            <NuxtLink class="transition-transform hover:translate-x-1" @click="onclick(item.title)">
-              <UIcon name="material-symbols:arrow-forward" class="w-6 h-6 text-primary" />
+          <div class="flex items-center justify-between border-t border-primary/10 pt-3">
+            <NuxtLink :to="getServiceUrl(item.title)" target="_blank" class="text-primary font-bold text-sm transition-transform hover:translate-x-1 flex items-center gap-1">
+              {{ item.link_label }}
+              <UIcon name="material-symbols:arrow-forward" class="w-4 h-4" />
             </NuxtLink>
           </div>
         </UPageCard>

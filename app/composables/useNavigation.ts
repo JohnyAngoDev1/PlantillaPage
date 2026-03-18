@@ -5,9 +5,9 @@ export const useNavigation = () => {
     const { t } = useTemplate()
 
     const navItems = computed(() => [
+        { label: t('navbar_link_home'), to: '#inicio' },
         { label: t('navbar_link_services'), to: '#servicios' },
         { label: t('navbar_link_testimonials'), to: '#testimonios' },
-        { label: t('navbar_link_contact'), to: '#contacto' },
     ])
 
     const footerLinks = computed(() => ({

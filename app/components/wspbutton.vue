@@ -4,7 +4,11 @@ import { useTemplate } from '~/composables/useTemplate'
 
 const { t } = useTemplate()
 
-const wspUrl = computed(() => `https://wa.me/${t('wspbutton_phone_number')}`)
+const wspUrl = computed(() => {
+  const phone = t('wspbutton_phone_number')
+  const message = encodeURIComponent('Hola, quiero saber más de sus servicios')
+  return `https://wa.me/${phone}?text=${message}`
+})
 </script>
 
 <template>

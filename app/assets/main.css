@@ -1,8 +1,12 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
-    --ui-primary: #EC5B13;
-    --ui-secondary: #F8F6F6;
-    --ui-info: #EC5B130D
+    --ui-primary: #1e3166;
+    --ui-secondary: #f0f0ea;
+    --ui-info: #1e31660D
 }

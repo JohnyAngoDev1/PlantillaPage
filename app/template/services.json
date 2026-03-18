@@ -1,6 +1,64 @@
 {
     "cards_section_subtitle": "Nuestros Servicios",
-    "cards_section_title": "Excelencia en cada detalle",
-    "cards_section_description": "Transformamos la madera noble en soluciones funcionales y estéticas para su espacio, cuidando cada veta y cada unión.",
-    "cards_item_price_prefix": "Presupuesto desde"
+    "cards_section_title": "Excelencia contable para tu negocio",
+    "cards_section_description": "Gestionamos tus impuestos, facturación y trámites laborales con precisión. Transparencia y cumplimiento para que tu negocio nunca se detenga.",
+    "cards_item_price_prefix": "",
+    "services": [
+        {
+            "id": 1,
+            "image": "/images/services/01.png",
+            "title": "Servicios contables y tributarios",
+            "description": "Servicios integrales de contabilidad e impuestos diseñados para mantener tu negocio financieramente saludable y en cumplimiento.",
+            "link_label": "Saber más"
+        },
+        {
+            "id": 2,
+            "image": "/images/services/02.png",
+            "title": "Devolución de impuestos",
+            "description": "Asistencia profesional con devoluciones de impuestos y reclamaciones legales complejas para recuperar el capital que te corresponde.",
+            "link_label": "Saber más"
+        },
+        {
+            "id": 3,
+            "image": "/images/services/03.png",
+            "title": "Firmas electrónicas",
+            "description": "Soluciones de firma digital seguras y con validez legal para profesionales y ejecutivos corporativos.",
+            "link_label": "Saber más"
+        },
+        {
+            "id": 4,
+            "image": "/images/services/04.png",
+            "title": "Facturador electrónico",
+            "description": "Optimiza tus ventas con nuestro software de facturación electrónica fácil de usar y compatible con la normativa local.",
+            "link_label": "Saber más"
+        },
+        {
+            "id": 5,
+            "image": "/images/services/05.png",
+            "title": "Capacitaciones",
+            "description": "Programas profesionales de formación y talleres de desarrollo para potenciar a tu equipo de trabajo.",
+            "link_label": "Saber más"
+        },
+        {
+            "id": 6,
+            "image": "/images/services/06.png",
+            "title": "Seguridad y salud ocupacional",
+            "description": "Auditorías integrales de seguridad y salud en el trabajo y sistemas de gestión del cumplimiento normativo.",
+            "link_label": "Saber más"
+        },
+        {
+            "id": 7,
+            "image": "/images/services/07.png",
+            "title": "Ministerio de trabajo",
+            "description": "Consultoría especializada en regulaciones del ministerio de trabajo, contratos y cumplimiento administrativo.",
+            "link_label": "Saber más"
+        },
+        {
+            "id": 8,
+            "image": "/images/services/08.png",
+            "title": "Super de Compañías",
+            "description": "Servicios legales y administrativos para el registro de empresas, actualizaciones y presentación de informes regulatorios.",
+            "link_label": "Saber más"
+        }
+    ]
 }
